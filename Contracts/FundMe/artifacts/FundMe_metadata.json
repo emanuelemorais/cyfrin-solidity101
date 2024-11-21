@@ -6,10 +6,61 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "funder",
+						"type": "address"
+					}
+				],
+				"name": "addressToAmountFunded",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "amoutFunded",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "fund",
 				"outputs": [],
 				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "funders",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "minimumUSD",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -40,12 +91,28 @@
 		"remappings": []
 	},
 	"sources": {
-		"Contracts/FundMe/FundMe.sol": {
-			"keccak256": "0x5b7ae05c87d63e092887a586acdf8de4b183bb6c9fd50798a568f496f47f9300",
+		"@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol": {
+			"keccak256": "0x257a8d28fa83d3d942547c8e129ef465e4b5f3f31171e7be4739a4c98da6b4f0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://19d3f7e6738f3f98b462d4eb7d440880376b733ed0f8f42ac630e46f25fa4795",
-				"dweb:/ipfs/QmaRWzP2SMLGQ4SmeBW22pATnpi18ZnScuokFitWrg826x"
+				"bzz-raw://6d39e11b1dc7b9b8ccdabbc9be442ab7cda4a81c748f57e316dcb1bcb4a28bf9",
+				"dweb:/ipfs/QmaG6vz6W6iEUBsbHSBob5mdcitYxWjoygxREHpsJHfWrS"
+			]
+		},
+		"Contracts/FundMe/FundMe.sol": {
+			"keccak256": "0xbf2b5d691f0ac633bc713869b26bb63b08ab56e93c3b93c15bb929e1e9b7e781",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://238edf47afd026d4bf144655a5ca1617323e013a184c8c99354ffb1dd6a21a2e",
+				"dweb:/ipfs/QmZEPTw2Y9kB1j1wYSmAYBMJSCpT78eLLtkUKVEmiX9gPP"
+			]
+		},
+		"Contracts/FundMe/PriceConverter.sol": {
+			"keccak256": "0x1a0f2a55658b71a447a59924659c64168d5813bb980c1e08b23cbe2ca8710df7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6db2f0a29d7cbe2a50de6c12c9aebab49d75281beba0427b5b18fb318dd5e0ed",
+				"dweb:/ipfs/QmW99NvQHJRhFQAE7Kk5PwCdqkdRGZ3UZjwDS1nKg1HCvd"
 			]
 		}
 	},
